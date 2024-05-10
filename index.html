@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تبدیل متن به ویس</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>تبدیل متن به ویس</h1>
+        <p>:متن خود را وارد کنید تا به ویس تبدیل شود</p>
+        <form id="textToSpeechForm">
+            <textarea id="inputText" placeholder="متن خود را اینجا وارد کنید..."></textarea>
+            <div class="selectSpeed">
+                <label>سرعت پخش صدا : </label>
+                <select id="select" value="1">
+                    <option value="0.2">0.2</option>
+                    <option value="0.4">0.4</option>
+                    <option value="0.6">0.6</option>
+                    <option value="0.8">0.8</option>
+                    <option value="1" selected>1</option>
+                    <option value="1.25">1.25</option>
+                    <option value="1.5">1.5</option>
+                    <option value="1.75">1.75</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+            <button type="submit">تبدیل به ویس</button>
+        </form>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
